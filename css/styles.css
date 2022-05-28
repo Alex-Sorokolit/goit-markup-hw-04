@@ -243,14 +243,14 @@ p {
   flex-basis: calc(100% / 4 - var(--card-gap));
 }
 .section-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.preview-list {
+.preview .item {
   flex-basis: calc(100% / 3 - var(--card-gap));
 }
 /* .preview-list > .item {
