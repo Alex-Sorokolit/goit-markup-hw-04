@@ -179,7 +179,26 @@ p {
 .auth-item:focus {
   color: var(--accent);
 }
-
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--text-gray);
+}
+.mail:hover .icon-mail,
+.mail:focus .icon-mail {
+  fill: var(--accent);
+}
+.icon-phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--text-gray);
+}
+.phone:hover .icon-phone,
+.phone:focus .icon-phone {
+  fill: var(--accent);
+}
 /* main________________________________________________ */
 
 .hero.section {
@@ -187,8 +206,17 @@ p {
   padding-bottom: 200px;
 }
 .hero {
-  background-color: var(--background-dark-gray);
+  /* background-color: var(--background-dark-gray); */
   text-align: center;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/backgrounds/header-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hero-title {
   width: 696px;
@@ -253,10 +281,23 @@ p {
 .preview .item {
   flex-basis: calc(100% / 3 - var(--card-gap));
 }
-/* .preview-list > .item {
+.specifics-icon {
+  display: flex;
+  justify-content: center;
+  /* border: 2px dashed #2a2a2a; */
+  width: 270px;
+  height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: var(--background-light-gray);
+  margin-bottom: 30px;
+}
 
-} */
-
+.spec-svg {
+  /* border: 2px dashed #2a2a2a; */
+  width: 70px;
+  height: 70px;
+}
 /* team __________________________________________*/
 .team {
   background-color: var(--background-light-gray);
