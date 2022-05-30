@@ -6,7 +6,9 @@
 /* Variables */
 :root {
   /* Color Palet */
+  --icon-gray: #afb1b8;
   --background-white: #ffffff;
+  --background-white-transperent: rgba(255, 255, 255, 0.1);
   --background-light-gray: #f5f4fa;
   --background-dark-gray: #2f303a;
   --text-black: #000000;
@@ -284,17 +286,14 @@ p {
 .specifics-icon {
   display: flex;
   justify-content: center;
-  /* border: 2px dashed #2a2a2a; */
+  align-items: center;
   width: 270px;
   height: 120px;
-  padding-top: 25px;
-  padding-bottom: 25px;
   background-color: var(--background-light-gray);
   margin-bottom: 30px;
 }
 
 .spec-svg {
-  /* border: 2px dashed #2a2a2a; */
   width: 70px;
   height: 70px;
 }
@@ -328,12 +327,105 @@ p {
   line-height: 1.1875;
   text-align: center;
 }
-
+.team-description {
+  margin-bottom: 16px;
+}
 .team-list .card-text {
   padding: 30px;
 }
 
-/* footer */
+/* .social {
+  outline: 1px solid orange;
+} */
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  /* background-color: teal; */
+  border-radius: 50%;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.circle:hover,
+.circle:focus {
+  background-color: var(--accent);
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-gray);
+}
+.circle:hover .social-icon,
+.circle:focus .social-icon {
+  fill: var(--background-white);
+}
+
+/* Clients_____________________________________ */
+.company-list {
+  display: flex;
+}
+.company-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-gray);
+  border-radius: 4px;
+}
+.company-item > a {
+  height: 60px;
+}
+.company-icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--icon-gray);
+}
+.company-item:hover,
+.company-item:focus {
+  border: 1px solid var(--accent);
+}
+.company-item:hover .company-icon,
+.company-item:focus .company-icon {
+  fill: var(--accent);
+}
+
+/* footer______________________________________ */
+.footer-columns {
+  display: flex;
+  align-items: baseline;
+}
+.adress-column {
+  /* background-color: teal; */
+  margin-right: 70px;
+}
+.social-column {
+  /* background-color: teal; */
+  width: 206px;
+}
+
+.footer .circle {
+  background-color: var(--background-white-transperent);
+}
+
+.footer .circle:hover,
+.footer .circle:focus {
+  background-color: var(--accent);
+}
+.social-column .title {
+  color: var(--text-white);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.03em;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;

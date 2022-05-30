@@ -36,16 +36,24 @@
             <li class="nav-item">
               <a class="link" href="./portfolio.html">Портфолио</a>
             </li>
+
             <li class="nav-item"><a class="link" href="">Контакты</a></li>
           </ul>
         </nav>
         <ul class="auth-list list">
           <!-- email -->
-          <li class="auth-item">
+          <li class="auth-item mail">
+            <svg class="icon-mail">
+              <use href="./images/icons/icons.svg#icon-mail"></use>
+            </svg>
             <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
+
           <!-- Phone -->
-          <li class="auth-item">
+          <li class="auth-item phone">
+            <svg class="icon-phone">
+              <use href="./images/icons/icons.svg#icon-phone"></use>
+            </svg>
             <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -213,32 +221,81 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <!-- Logo -->
-        <a class="footer-logo link logo" href="./index.html"
-          >Web<span class="logo-white">Studio</span></a
-        >
-        <!-- Address -->
-        <address class="address">
-          <ul class="list address-list">
-            <li class="item">
-              <a
-                class="address-link link"
-                href="https://goo.gl/maps/jnasmkMAZztD2F1y9"
-                target="_blank"
-                rel="noopener nofollow noreferrer"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li class="item">
-              <a class="address-link link" href="mailto:info@example.com">info@example.com</a>
-            </li>
-            <!-- Phone -->
-            <li class="item">
-              <a class="address-link link" href="tel:+380991111111">+38 099 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+      <div class="container footer-columns">
+        <div class="adress-column">
+          <!-- Logo -->
+          <a class="footer-logo link logo" href="./index.html"
+            >Web<span class="logo-white">Studio</span></a
+          >
+
+          <!-- Address -->
+          <address class="address">
+            <ul class="list address-list">
+              <li class="item">
+                <a
+                  class="address-link link"
+                  href="https://goo.gl/maps/jnasmkMAZztD2F1y9"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="item">
+                <a class="address-link link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <!-- Phone -->
+              <li class="item">
+                <a class="address-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="social-column">
+          <h2 class="title">присоединяйтесь</h2>
+          <div class="social">
+            <ul class="social-list list">
+              <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                  <div class="circle">
+                    <svg class="social-icon">
+                      <use href="./images/icons/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                  <div class="circle">
+                    <svg class="social-icon">
+                      <use href="./images/icons/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                  <div class="circle">
+                    <svg class="social-icon">
+                      <use href="./images/icons/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                  <div class="circle">
+                    <svg class="social-icon">
+                      <use href="./images/icons/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
