@@ -515,7 +515,8 @@ p {
   background-color: var(--background-white);
   width: calc(100% / 3 - var(--card-gap));
 }
-.portfolio-item:hover {
+.portfolio-item:hover,
+.portfolio-item:focus {
   box-shadow: var(--card-shadow);
 }
 
