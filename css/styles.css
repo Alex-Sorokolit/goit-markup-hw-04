@@ -162,48 +162,40 @@ p {
 } */
 /* ___________________________________________ */
 
-.nav-list .link {
-  display: block;
+.nav-list .link,
+.auth-item .link {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.nav-item:hover,
-.nav-item:focus {
+.nav-item .link:hover,
+.nav-item .link:focus {
   color: var(--accent);
 }
 .auth-list {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
+/* .auth-item .link {
+  display: flex;
+  align-items: center;
+} */
 .auth-list .auth-item + .auth-item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 /* .auth-item {
 } */
-.auth-item:hover,
-.auth-item:focus {
+.auth-item .link:hover,
+.auth-item .link:focus {
   color: var(--accent);
 }
-.icon-mail {
-  width: 16px;
-  height: 12px;
+.auth-icon {
   margin-right: 10px;
-  fill: var(--text-gray);
+  fill: currentColor;
 }
-.mail:hover .icon-mail,
-.mail:focus .icon-mail {
-  fill: var(--accent);
-}
-.icon-phone {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: var(--text-gray);
-}
-.phone:hover .icon-phone,
-.phone:focus .icon-phone {
-  fill: var(--accent);
-}
+
 /* main________________________________________________ */
 
 .hero.section {
